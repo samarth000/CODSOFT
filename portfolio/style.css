@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.tagline {
+    font-style: italic;
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+section#about, section#skills, section#projects, section#resume, section#contact {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Styling for section headings */
+section#about h2, section#skills h2, section#projects h2, section#resume h2, section#contact h2 {
+    color: #333;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+section#about h2::after, section#skills h2::after, section#projects h2::after, section#resume h2::after, section#contact h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #ff6347; /* Tomato color */
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+section#about h2 {
+    color: #ff6347; /* Tomato color */
+}
+
+section#skills h2 {
+    color: #4682b4; /* SteelBlue color */
+}
+
+section#projects h2 {
+    color: #32cd32; /* LimeGreen color */
+}
+
+section#resume h2 {
+    color: #ff8c00; /* DarkOrange color */
+}
+
+section#contact h2 {
+    color: #8a2be2; /* BlueViolet color */
+}
+
+h2 {
+    color: #333;
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #333;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.project {
+    margin: 20px 0;
+}
+
+.project img {
+    width: 1000px;
+    height: 500px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
