@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(to right, #FF512F, #DD2476);
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        header nav ul li {
+            margin-left: 20px;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            background-image: url('pizzabg2.jpg'); /* Add your image URL here */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 48px;
+            color: #FF512F; /* Change this to your desired color */
+        }
+        .hero p {
+            font-size: 18px;
+            margin: 20px 0;
+            color: #DD2476; /* Change this to your desired color */
+        }
+        .hero .buttons a {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            border: 2px solid white;
+            margin: 10px;
+        }
+        .services, .about-us, .our-services {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .services h2, .about-us h2, .our-services h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .services .service, .our-services .service {
+            display: inline-block;
+            width: 30%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .services .service, .our-services .service {
+            margin: 20px 1%;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .about-us p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .services{
+        background-image: url('pizzaservice.jpg'); /* Add your image URL here */
+            background-size: cover;
+            background-position: center;
+        }
+        .about-us{
+        background-image: url('pizzaabout.jpg'); /* Add your image URL here */
+            background-size: cover;
+            background-position: center;
+        }
+        .our-services{
+        background-image: url('pizzaservice3.jpg'); /* Add your image URL here */
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Landing Page</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Page</a></li>
+                <li><a href="#">Services</a></li>
+                <!-- <li><a href="#">Testimonials</a></li> -->
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="btn">Buy Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Funky Fuel Pizza</h1>
+        <p>"Deliciously Crafted Pizzas, Perfect for Every Occasion"</p>
+        <div class="buttons">
+            <a href="#">Read More</a>
+            <a href="#" class="btn">Book a Dine-in</a>
+        </div>
+    </div>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>In-House Services</h3>
+            <p>The in-house experience at a pizza cafe includes comfortable seating, a family-friendly atmosphere, music or live entertainment, free Wi-Fi, and TV screens showing sports or movies.
+            </p>
+        </div>
+        <div class="service">
+            <h3>Takeout and Delivery</h3>
+            <p>The takeout and delivery service at a pizza cafe offers convenient online ordering, real-time tracking, and multiple pickup or contactless delivery options for customers.</p>
+        </div>
+        <div class="service">
+            <h3>Catering and Event service</h3>
+            <p>The Catering and Event service provides customizable catering packages and event hosting options, ensuring seamless planning and delicious food for private, and community events.</p>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <h2>About Us</h2>
+        <p>"At Funky Fuel Pizza, we are passionate about crafting the perfect slice. With fresh ingredients and a commitment to quality, we aim to satisfy your cravings with every bite, making us your go-to destination for authentic pizza experiences."
+        </p>
+        <!-- <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p> -->
+        <a href="#">Read More</a>
+    </section>
+
+    <section class="our-services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>User Experience</h3>
+        </div>
+        <div class="service">
+            <h3>Creative Design</h3>
+        </div>
+        <div class="service">
+            <h3>Retina Ready</h3>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Landing Page. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
