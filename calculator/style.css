@@ -1,104 +1,143 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
-body {
-  height: 100vh;
+html {
+  font-family: "Roboto", "Noto Sans", "Helvetica", sans-serif;
+  font-size: 14px;
+  background-color: #3498DB;
+  height: 100%;
+}
+
+.calculator {
+  width: 350px;
+  height: auto;
+  margin: 70px auto 0;
+  overflow: hidden;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.calculator span {
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.top {
+  position: relative;
+  height: 150px;
+  background-color: white;
+}
+
+.top .unit {
+  text-transform: uppercase;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-weight: 700;
+  color: #757575;
+}
+
+.top .screen {
+  position: relative;
+  width: 100%;
+  top: 20%;
+  height: 80%;
+}
+
+.screen > div  {
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: linear-gradient(to right, #36d1dc, #5b86e5);
-}
-
-.container {
-  position: relative;
-  max-width: 340px;
+  justify-content: flex-end;
   width: 100%;
-  border-radius: 20px;
-  padding: 20px;
-  background: #fff;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-.container:hover {
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-}
-
-.display {
-  height: 80px;
-  width: 100%;
-  outline: none;
-  border: none;
+  padding: 5px;
   text-align: right;
-  margin-bottom: 10px;
-  font-size: 25px;
-  color: #000e1a;
-  pointer-events: none;
-  background-color: #f0f2f5;
-  border-radius: 10px;
-  padding: 10px;
-  transition: background-color 0.3s ease-in-out;
 }
 
-.display:hover {
-  background-color: #dfe3eb;
+.screen .input {
+  color: #757575;
+  height: 60%;
+  font-size: 35px;
 }
 
-.buttons {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.buttons button {
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  border: none;
+.screen .result {
+  color: #9e9e9e;
   font-size: 20px;
+  height: 40%;
+}
+
+.bottom {
+  background-color: #2D2D2D;
+  height: 300px;
+  color: #fff;
   cursor: pointer;
-  background-color: #eee;
-  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
-.buttons button:hover {
-  background-color: #dfe3eb;
-  animation: pulse 0.5s infinite;
+.bottom section {
+  position: relative;
+  height: 100%;
+  float: left;
+  display: flex;
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.buttons button:active {
-  transform: scale(0.95);
-}
-
-.operator {
-  color: #2f9fff;
+.keys {
+  width: 80%;
 }
 
 
+.keys .column {
+  display: flex;
+  flex-grow: 1;
+}
 
+.keys .column, .operators {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.keys .column span, .operators span {
+  position: relative;
+  overflow: hidden;
+  flex-grow: 1;
+  width: 100%;
+  line-height: 1;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s;
+}
 
+.keys .column span {
+  font-size: 25px;
+}
 
+.keys .column span:hover, .operators span:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
 
+.operators {
+  width: 20%;
+  font-size: 18px;
+  background-color: #434343;
+}
 
+.delete {
+  font-size: 16px;
+  text-transform: uppercase;
+}
 
+.credit {
+  display: block;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  margin: 0 auto;
+}
 
-
+.credit a, .error {
+  color: #C2185B;
+}
